@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    width: 90%;
+    max-width: 500px;
+    margin-top: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    margin-bottom: 2rem;
+}
+
+.user-image{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -2rem;
+    background: white;
+}
+
+.user-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: clamp(2rem, 8vw, 3rem);
+    color: white;
+}
+
+.heading h4{
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    color: turquoise;
+    margin-top: 0.6em;
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form input{
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    margin-top: 0.5em;
+    width: 90%;
+    min-width: 10.5rem;
+    padding-block: clamp(0.5em, 5vw, 0.8em);
+    padding-inline-start: clamp(0.6em, 5vw, 1em);
+    font-size: 0.9rem;
+}
+
+#submit-btn{
+    max-width: 250px;
+    text-align: center;
+    background: aqua;
+    cursor: pointer;
+}
+
+#error{
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+form p{
+    font-size: 0.8rem;
+    margin-top: 1em;
+    padding: 0.5em;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.style.css" />
+    <title>Welcome | Fill in the form</title>
+</head>
+<body>
+    <div class="form-container">
+
+        <div class="user-image">
+            <img src="./images/account.png" alt="user-icon">
+        </div>
+
+        <div class="heading">
+            <h1>BOOK STORE</h1>
+            <h4>SIGN UP</h4>
+        </div>
+
+        <div class="form">
+            <div class="error-message">
+                <p id="error"></p>
+            </div>
+        
+            <form action="./home.page.html" id="form">
+                <input type="text" value="" placeholder="First Name" id="firstname" class="required-input">
+                <input type="text" value="" placeholder="Last Name" id="lastname" class="required-input">
+                <input type="number" value="" placeholder="Phone Number" id="phonenumber" class="required-input">
+                <input type="text" value="" placeholder="Address" id="address" class="required-input">
+                <input type="text" value="" placeholder="City" id="city" class="required-input">
+                <input type="password" value="" placeholder="Password" id="password" class="required-input">
+                <input type="password" value="" placeholder="Confirm password" id="Confirm-password" class="required-input">
+                <input type="submit" id="submit-btn">
+                <p>
+                    Already have an account: <a href="">LogIn</a>
+                </p>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+<script src="./form.validation.js"></script>
+</html>
