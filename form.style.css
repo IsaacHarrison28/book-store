@@ -23,13 +23,13 @@ body{
 }
 
 .user-image{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: auto;
     border: 6px solid white;
     border-radius: 50%;
     position: relative;
-    top: -2rem;
+    top: -3rem;
     background: white;
 }
 
@@ -96,4 +96,13 @@ form p{
     font-size: 0.8rem;
     margin-top: 1em;
     padding: 0.5em;
+}
+
+
+@media(width > 900px){
+    .user-image{
+        width: 100px;
+        height: 100px;
+        top: -4rem;
+    }
 }

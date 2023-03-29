@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner{
+    min-height: 200px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instruction{
+    padding: 2.5em 1.2em 0.5em;
+}
+
+.instruction h1{
+    color: white;
+    text-align: center;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    color: aqua;
+}
+
+.instruction p{
+    color: white;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 1em;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+.search{
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 1em;
+}
+
+.search input{
+    padding: 0.6em 1em;
+    border: none;
+    outline: none;
+    border-radius: 1em;
+    width: 60%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.search-icon{
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: -1.85rem;
+    background: white;
+    padding-block: 0.2em;
+    padding-inline: 0.6em;
+    right: -5.5rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+@media(width >= 427px){
+    .search-icon{
+        right: -6.4rem;
+    } 
+}
+
+@media(width > 441px){
+    .search-icon{
+        right: -6.7rem;
+    }
+}
+
+.search-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.query-results{
+    padding: 0.5rem;
+}
+
+.query-results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.queryContainer{
+    width: 80%;
+    max-width: 200px;
+    height: max-content;
+    margin: 1em;
+    background: black;
+    color: white;
+    padding: 0.6em;
+    border-radius: 1em;
+}
+
+.bookCoverContainer{
+    width: 100%;
+    height: 40vh;
+    border-radius: 1em;
+    background: white;
+}
+
+.bookCoverContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1em;
+}
+
+.bookTitleContainer{
+    width: 90%;
+    margin-block: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.bookTypeContainer{
+    width: 90%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.authorAndYearContainer{
+    width: 95%;
+    padding-block: 0.5em;
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+.author-and-year{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
