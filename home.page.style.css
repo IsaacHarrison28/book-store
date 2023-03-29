@@ -28,7 +28,7 @@ nav{
 
 .name p{
     font-size: 0.55rem;
-    color: white;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .banner{
@@ -54,7 +54,7 @@ nav{
 }
 
 .banner-text h1{
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: clamp(3.5rem, 7vw, 6rem);
     color: aqua;
 }
 
@@ -94,10 +94,10 @@ nav{
 }
 
 .heading h2{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-align: center;
     color: rgba(0, 0, 0, 0.9);
-    max-width: 340px;
+    max-width: 500px;
 }
 
 .description-text{
@@ -121,7 +121,7 @@ nav{
     border: none;
     outline: none;
     border-radius: 1em;
-    background: aqua;
+    background: rgb(46, 206, 46);
     font-size: 0.9rem;
 }
 
@@ -142,7 +142,7 @@ footer{
 
 .organisation-links h3{
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .links{
@@ -155,10 +155,16 @@ footer{
 
 .links a{
     color: blue;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .links a:focus{
     color: white;
     text-decoration: none;
+}
+
+@media(width > 900px){
+    .description-text{
+       font-size: 1.1rem;
+    }
 }
